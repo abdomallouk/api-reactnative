@@ -5,7 +5,7 @@ const port = 3000
 app.get('/home', (req, res) => {
     console.log("kjnsjdn");
     
-  res.send('Hello sdfdsfdsfWorld!')
+  res.send('Hello sdfsdfsdf!')
 })
 
 app.listen(port, () => {
