@@ -2,10 +2,11 @@ import express from "express"
 const app = express()
 const port = 3000
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
+    console.log("kjnsjdn");
     console.log("kjnsjdn");
     
-  res.send('Hello sdfsdfsdf!')
+  res.send('Hello! sdfdsfsdc;,x,')
 })
 
 app.listen(port, () => {
