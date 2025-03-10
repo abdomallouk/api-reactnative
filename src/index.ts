@@ -1,14 +1,11 @@
-import express from "express"
-const app = express()
-const port = 3000
+import express, { Router } from "express";
+import productsRoutes from "../src/routes/products/index";
 
-app.get('/', (req, res) => {
-    console.log("kjnsjdn");
-    console.log("kjnsjdn");
-    
-  res.send('Hello! sdfdsfsdc;,x,')
-})
+const app = express();
+const port = 3000;
+
+app.use("/products", productsRoutes);
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+  console.log(`Example app listening on port ${port}`);
+});
